@@ -13,8 +13,8 @@ Requirements:
 
 Navigate to working Directory and Run using command Line arguments:
 	Windows:python main.py ~url
-		Example: python main.py https://distill.pub/2017/feature-visualization/
+		Example: python main.py https://en.wikipedia.org/wiki/ICICI_Bank
 	Linux:  python3 main.py ~url
-		Example: python3 main.py https://distill.pub/2017/feature-visualization/
+		Example: python3 main.py https://en.wikipedia.org/wiki/ICICI_Bank
 
 NOTE: Output File Is opened in append mode everytime, Hence New request will be appended in the output file
