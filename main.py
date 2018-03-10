@@ -1,17 +1,16 @@
 import requests
 from html.parser import HTMLParser
 import sys
-import ast
+import json
 scrape_check=''
 
 #Stopwords, specialwords and Bad_words from configuration file
 with open('configuration.json') as config_file:
-    config_dict = ast.literal_eval(config_file.read())
+    config_dict = json.loads(config_file.read())
 
-special_tags = config_dict['special_tags']
-stop_tags = config_dict['stop_tags']
-bad_data = config_dict['bad_data']
-
+special_tags = config_dict['special_tags'].split(',')
+stop_tags = config_dict['stop_tags'].split(',')
+bad_data = config_dict['bad_data'].split(',')
 def write_to_file(data):
     with open('output.txt', 'a') as output:
         output.write(data)
