@@ -5,9 +5,9 @@ import ast
 scrape_check=''
 
 #Stopwords, specialwords and Bad_words from configuration file
-config_file = open('configuration.txt')
-config_dict = ast.literal_eval(config_file.read())
-config_file.close()
+with open('configuration.json') as config_file:
+    config_dict = ast.literal_eval(config_file.read())
+
 special_tags = config_dict['special_tags']
 stop_tags = config_dict['stop_tags']
 bad_data = config_dict['bad_data']
@@ -28,7 +28,7 @@ class MyHtmlParser(HTMLParser):
             write_to_file(data)
             return
         if scrape_check in stop_tags or data in bad_data:
-            scrape_check=''
+            scrape_check = ''
             return
         if len(data.split(' '))>10:
             write_to_file(data)

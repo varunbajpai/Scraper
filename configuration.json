@@ -1,8 +1,8 @@
 {
-      'special_tags':
+      "special_tags":
                 ['caption','h1','h2','h3','h4','h5','h6','i','b','strong'],
-      'stop_tags':
+      "stop_tags":
                 ['script','noscript','style','meta','link'],
-      'bad_data':
+      "bad_data":
                 [r'\n',r'\t']
 }
