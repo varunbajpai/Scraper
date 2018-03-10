@@ -11,7 +11,7 @@ Requirements:
 		Specialwords: Tags such as b,h1 where data length is < 10 but are relevant to information
 		In case of additional information to any of these tags, include tags in files as described
 
-NAVIGATE TO WORKING DIRECTORY AND RUN USING COMMAND LINE ARGUMENTS:
+Navigate to working Directory and Run using command Line arguments:
 	Windows:python main.py ~url
 		Example: python main.py https://distill.pub/2017/feature-visualization/
 	Linux:  python3 main.py ~url
