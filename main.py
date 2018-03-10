@@ -2,15 +2,15 @@ import requests
 from html.parser import HTMLParser
 import sys
 import json
-scrape_check=''
+scrape_check = ''
 
 #Stopwords, specialwords and Bad_words from configuration file
 with open('configuration.json') as config_file:
-    config_dict = json.loads(config_file.read())
+    config_dict = json.load(config_file)
 
-special_tags = config_dict['special_tags'].split(',')
-stop_tags = config_dict['stop_tags'].split(',')
-bad_data = config_dict['bad_data'].split(',')
+special_tags = config_dict['special_tags']
+stop_tags = config_dict['stop_tags']
+bad_data = config_dict['bad_data']
 def write_to_file(data):
     with open('output.txt', 'a') as output:
         output.write(data)
