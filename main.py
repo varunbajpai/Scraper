@@ -13,6 +13,8 @@ stop_tags = config_dict['stop_tags']
 bad_data = config_dict['bad_data']
 def write_to_file(data):
     with open('output.txt', 'a') as output:
+        for i in range(len(bad_data)):
+            data=data.replace(bad_data[i],'')
         output.write(data)
 
 # create a subclass and override the handler methods
