@@ -12,9 +12,9 @@ Requirements:
 		In case of additional information to any of these tags, include tags in files as described
 
 Navigate to working Directory and Run using command Line arguments:
-	Windows:python main.py ~url ~output file name
+	Windows:python main.py ~url ~output_file_name
 		Example: python main.py https://en.wikipedia.org/wiki/ICICI_Bank icici.txt
-	Linux:  python3 main.py ~url ~output file name
+	Linux:  python3 main.py ~url ~output_file_name
 		Example: python3 main.py https://en.wikipedia.org/wiki/ICICI_Bank icici.txt
 	NOTE:   ~url is a mandatory argument, output file name is not mandatory, default output file is 'output.txt'
 
