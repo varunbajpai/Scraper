@@ -14,8 +14,8 @@ Requirements:
 Navigate to working Directory and Run using command Line arguments:
 	Windows:python main.py ~url ~output file name
 		Example: python main.py https://en.wikipedia.org/wiki/ICICI_Bank icici.txt
-	Linux:  python3 main.py ~url
+	Linux:  python3 main.py ~url ~output file name
 		Example: python3 main.py https://en.wikipedia.org/wiki/ICICI_Bank icici.txt
-	NOTE:   ~url is a mandatory argument, output file name is not mandatory, default output file name is 'output.txt'
+	NOTE:   ~url is a mandatory argument, output file name is not mandatory, default output file is 'output.txt'
 
 NOTE: Output File Is opened in append mode everytime, Hence New request will be appended in the output file
